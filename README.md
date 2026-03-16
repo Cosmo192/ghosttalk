@@ -176,5 +176,3 @@ Pull requests are welcome! If you find a bug or have an idea, open an issue.
 
 *Built with ❤️ and cryptography.*
 =======
-# ghosttalk
->>>>>>> 52ea129f58e70ea07d1454f8aa7e5235fc05d48b
