@@ -1,0 +1,47 @@
+{
+  "name": "ghosttalk",
+  "version": "1.0.0",
+  "description": "Offline, encrypted P2P LAN messenger. No internet. No accounts. No traces.",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "build": "npm run react-build && electron-builder",
+    "electron": "electron ."
+  },
+  "dependencies": {
+    "bonjour-service": "^1.1.1",
+    "net": "^1.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4",
+    "wait-on": "^7.0.1"
+  },
+  "homepage": "./",
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version"]
+  },
+  "build": {
+    "appId": "com.ghosttalk.app",
+    "productName": "GhostTalk",
+    "directories": { "output": "dist" },
+    "files": [
+      "build/**/*",
+      "main.js",
+      "preload.js",
+      "src/crypto/**/*",
+      "src/network/**/*",
+      "node_modules/**/*"
+    ],
+    "win": { "target": "nsis" },
+    "mac": { "category": "public.app-category.social-networking" },
+    "linux": { "target": "AppImage" }
+  }
+}
