@@ -106,7 +106,7 @@ ghosttalk/
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/ghosttalk.git
+git clone https://github.com/Cosmo192/ghosttalk.git
 cd ghosttalk
 
 # Install dependencies
