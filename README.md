@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #  GhostTalk
 
 > Encrypted. Offline. Untraceable.
@@ -175,4 +175,4 @@ Pull requests are welcome! If you find a bug or have an idea, open an issue.
 ---
 
 
-=======
+
