@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# 👻 GhostTalk
+#  GhostTalk
 
 > Encrypted. Offline. Untraceable.
 
@@ -9,18 +9,18 @@ GhostTalk is a **peer-to-peer encrypted desktop messenger** that works entirely 
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔐 **End-to-end encrypted** — ECDH key exchange + AES-256-GCM per message
-- 📡 **Zero internet required** — works entirely on LAN
-- 🚫 **No accounts** — open and chat instantly
-- 🔑 **Keys never leave your device** — the server (there is none) never sees plaintext
-- 👻 **Auto-discovery** — finds other GhostTalk users on the network automatically via mDNS
-- 🖥️ **Cross-platform** — Windows, macOS, Linux
+-  **End-to-end encrypted** — ECDH key exchange + AES-256-GCM per message
+-  **Zero internet required** — works entirely on LAN
+-  **No accounts** — open and chat instantly
+-  **Keys never leave your device** — the server (there is none) never sees plaintext
+-  **Auto-discovery** — finds other GhostTalk users on the network automatically via mDNS
+-  **Cross-platform** — Windows, macOS, Linux
 
 ---
 
-## 🔐 How the Encryption Works
+##  How the Encryption Works
 
 GhostTalk uses a **hybrid cryptography model** — the same approach used by Signal, WhatsApp, and iMessage.
 
@@ -50,10 +50,10 @@ Every message is encrypted with **AES-256-GCM**:
 Keys are generated fresh each session and stored only in memory. If a device is compromised later, **past conversations cannot be decrypted**.
 
 ```
-┌─────────────┐          LAN (TCP)         ┌─────────────┐
+┌─────────────┐          LAN (TCP)          ┌─────────────┐
 │    Alice    │ ──── encrypted gibberish ──▶│     Bob     │
-│  🔑 KeyA   │                             │  🔑 KeyB   │
-└─────────────┘                             └─────────────┘
+│   KeyA   │                                 │   KeyB     │
+└─────────────┘                              └─────────────┘
        ↕ ECDH handshake                           ↕
   Shared Secret ◀──────────────────────────▶ Shared Secret
   (computed locally)                        (computed locally)
@@ -61,7 +61,7 @@ Keys are generated fresh each session and stored only in memory. If a device is 
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ghosttalk/
@@ -96,7 +96,7 @@ ghosttalk/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) v18 or higher
@@ -130,7 +130,7 @@ Outputs will be in the `dist/` folder:
 
 ---
 
-## 🧪 Testing It Locally
+##  Testing It Locally
 
 To test with two instances on the same machine:
 
@@ -142,7 +142,7 @@ For a real test, install on **two computers on the same WiFi network** and open 
 
 ---
 
-## ⚠️ Security Notes
+##  Security Notes
 
 - GhostTalk is designed for **local network use only**
 - Keys are ephemeral (in-memory only) — no persistence across sessions by design
@@ -162,17 +162,17 @@ For a real test, install on **two computers on the same WiFi network** and open 
 
 ---
 
-## 📄 License
+##  License
 
 MIT — free to use, modify, and distribute.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome! If you find a bug or have an idea, open an issue.
 
 ---
 
-*Built with ❤️ and cryptography.*
+
 =======
