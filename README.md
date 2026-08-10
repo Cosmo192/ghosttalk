@@ -1,9 +1,9 @@
 
-#  GhostTalk
+#  Ghost
 
 > Encrypted. Offline. Untraceable.
 
-GhostTalk is a **peer-to-peer encrypted desktop messenger** that works entirely over your local network — no internet, no accounts, no servers, no logs. Just open the app and start chatting securely with anyone on the same WiFi.
+Ghost is a **peer-to-peer encrypted desktop messenger** that works entirely over your local network — no internet, no accounts, no servers, no logs. Just open the app and start chatting securely with anyone on the same WiFi.
 
 ![GhostTalk Screenshot](./docs/screenshot.png)
 
@@ -15,14 +15,14 @@ GhostTalk is a **peer-to-peer encrypted desktop messenger** that works entirely 
 -  **Zero internet required** — works entirely on LAN
 -  **No accounts** — open and chat instantly
 -  **Keys never leave your device** — the server (there is none) never sees plaintext
--  **Auto-discovery** — finds other GhostTalk users on the network automatically via mDNS
+-  **Auto-discovery** — finds other Ghost users on the network automatically via mDNS
 -  **Cross-platform** — Windows, macOS, Linux
 
 ---
 
 ##  How the Encryption Works
 
-GhostTalk uses a **hybrid cryptography model** — the same approach used by Signal, WhatsApp, and iMessage.
+Ghost uses a **hybrid cryptography model** — the same approach used by Signal, WhatsApp, and iMessage.
 
 ### 1. Key Exchange (ECDH)
 When two users connect, they perform an **Elliptic Curve Diffie-Hellman (ECDH)** handshake using the NIST P-256 curve:
@@ -64,7 +64,7 @@ Keys are generated fresh each session and stored only in memory. If a device is 
 ##  Architecture
 
 ```
-ghosttalk/
+ghost/
 ├── main.js                  # Electron main process
 ├── preload.js               # Secure IPC bridge (contextBridge)
 ├── src/
@@ -106,8 +106,8 @@ ghosttalk/
 
 ```bash
 # Clone the repo
-git clone https://github.com/Cosmo192/ghosttalk.git
-cd ghosttalk
+git clone https://github.com/Cosmo192/ghost.git
+cd ghost
 
 # Install dependencies
 npm install
@@ -144,7 +144,7 @@ For a real test, install on **two computers on the same WiFi network** and open 
 
 ##  Security Notes
 
-- GhostTalk is designed for **local network use only**
+- Ghost is designed for **local network use only**
 - Keys are ephemeral (in-memory only) — no persistence across sessions by design
 - This project is for **educational purposes** and personal use
 - Not audited for production security — do not use for sensitive communications
